@@ -10,8 +10,8 @@ plugins {
 mainClassName = "eu.spyros.koukas.ros.examples.Main"
 
 repositories {//start repositories
-		jcenter()
         mavenCentral()
+        maven { url 'https://artifacts.camunda.com/artifactory/public' }
         maven {
             url "https://github.com/rosjava/rosjava_mvn_repo/raw/master"
         }

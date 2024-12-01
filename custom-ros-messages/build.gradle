@@ -5,8 +5,8 @@ buildscript {
         classpath "org.ros.rosjava_bootstrap:message_generation:0.3.3"
     }
     repositories {
-        jcenter()
         mavenCentral()
+        maven { url 'https://artifacts.camunda.com/artifactory/public' }
         maven {
             url "https://github.com/rosjava/rosjava_mvn_repo/raw/master"
         }
@@ -49,8 +49,8 @@ compileJava.dependsOn generateRosMessages
 
 repositories {
     repositories {
-        jcenter()
         mavenCentral()
+        maven { url 'https://artifacts.camunda.com/artifactory/public' }
         maven {
             url "https://github.com/rosjava/rosjava_mvn_repo/raw/master"
         }
